@@ -1,0 +1,52 @@
+#name {
+    width: 80%;
+    text-align: center;
+}
+
+h1 {
+    margin-top:5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+.Adress {
+    width: 10%;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-title{
+    margin-top:5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+hr{
+    margin-top:1px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 1px;
+}
+
+.right { 
+    float: right;
+    width: 20%;
+    text-align: right;
+}
+
+.left {
+    float: left;
+    width: 80%;
+}
+
+ul{
+    margin-top:1px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 1px;
+}

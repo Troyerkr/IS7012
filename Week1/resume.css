@@ -1,5 +1,5 @@
 #name {
-    width: 80%;
+    width: 70%;
     text-align: center;
 }
 
@@ -11,7 +11,7 @@ h1 {
 }
 
 .Adress {
-    width: 10%;
+    width: 15%;
 }
 
 table{
@@ -49,4 +49,12 @@ ul{
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 1px;
+}
+
+.section-header{
+    clear: left;
+}
+
+.content{
+    padding: 2%;
 }

@@ -11,7 +11,7 @@ body {
 
 /* Style the header */
 .header {
-  background-color: #f1f1f1;
+  background-color: rgb(219, 219, 219);
   padding: 20px;
   text-align: center;
 }
@@ -72,6 +72,11 @@ table {
   width: 100%;
 }
 
+table, td, th{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
 td {
   font-size: 12px;
   text-align: center;
@@ -80,3 +85,20 @@ td {
 .class-name{
   text-align: left;
 }
+
+/*fonts*/
+
+p{
+  font-family:sans-serif;
+}
+
+h1, h2, h3{
+  font-family: serif;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+
+

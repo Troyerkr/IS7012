@@ -11,6 +11,8 @@ namespace RecruitCatTroyerkr.Models
         public string Name { get; set; }
         public string PositionName { get; set; }
         public string Location { get; set; }
+        //Added
+        public int NumberOfEmployees { get; set; }
         //Company and Candidates
         public List<Candidate> Candidates { get; set; }
         //Company and Industry

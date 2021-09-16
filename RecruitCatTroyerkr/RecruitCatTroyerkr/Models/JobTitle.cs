@@ -11,6 +11,9 @@ namespace RecruitCatTroyerkr.Models
         public string Title { get; set; }
         public int MinimumSalary { get; set; }
         public int MaximumSalary { get; set; }
+        //Added
+        public DateTime? ApplicationDeadline { get; set; }
+        public bool FullTime { get; set; }
         //JobTitle and Candidate
         public List<Candidate> Candidates { get; set; }
     }

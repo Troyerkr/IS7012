@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -9,9 +10,11 @@ namespace RecruitCatTroyerkr.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        [DisplayName("Position Name")]
         public string PositionName { get; set; }
         public string Location { get; set; }
         //Added
+        [DisplayName("Number of Employees")]
         public int NumberOfEmployees { get; set; }
         //Company and Candidates
         public List<Candidate> Candidates { get; set; }

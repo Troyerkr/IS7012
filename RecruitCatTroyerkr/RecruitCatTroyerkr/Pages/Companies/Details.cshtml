@@ -5,10 +5,10 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1>@Html.DisplayFor(model => model.Company.Name)</h1>
 
 <div>
-    <h4>Company</h4>
+    <h4>Details</h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
@@ -39,9 +39,37 @@
             @Html.DisplayNameFor(model => model.Company.Industry)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Company.Industry.Id)
+            @Html.DisplayFor(model => model.Company.Industry.Name)
         </dd>
     </dl>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Target Salary</th>
+                <th>PhoneNumber</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Company.Candidates != null)
+            {
+                @foreach (var can in Model.Company.Candidates)
+                {
+                    <tr>
+                        <td>@can.FullName</td>
+                        <td>@can.TargetSalary</td>
+                        <td>@can.PhoneNumber</td>
+                        <td>@can.Email</td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <td align="center" colspan="4">No candidates yet</td>
+            }
+        </tbody>
+    </table>
 </div>
 <div>
     <a asp-page="./Edit" asp-route-id="@Model.Company.Id">Edit</a> |

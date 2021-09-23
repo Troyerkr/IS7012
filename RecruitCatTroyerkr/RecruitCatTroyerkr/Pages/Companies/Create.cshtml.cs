@@ -21,7 +21,7 @@ namespace RecruitCatTroyerkr.Pages.Companies
 
         public IActionResult OnGet()
         {
-        ViewData["IndustryId"] = new SelectList(_context.Set<Industry>(), "Id", "Id");
+        ViewData["IndustryId"] = new SelectList(_context.Set<Industry>(), "Id", "Name");
             return Page();
         }
 

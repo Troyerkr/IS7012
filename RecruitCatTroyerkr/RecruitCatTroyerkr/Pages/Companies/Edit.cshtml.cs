@@ -37,7 +37,7 @@ namespace RecruitCatTroyerkr.Pages.Companies
             {
                 return NotFound();
             }
-           ViewData["IndustryId"] = new SelectList(_context.Set<Industry>(), "Id", "Id");
+           ViewData["IndustryId"] = new SelectList(_context.Set<Industry>(), "Id", "Name");
             return Page();
         }
 

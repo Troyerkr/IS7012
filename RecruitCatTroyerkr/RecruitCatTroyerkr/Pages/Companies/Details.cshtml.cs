@@ -28,8 +28,7 @@ namespace RecruitCatTroyerkr.Pages.Companies
                 return NotFound();
             }
 
-            Company = await _context.Company
-                .Include(c => c.Industry).FirstOrDefaultAsync(m => m.Id == id);
+            Company = await _context.Company.Include(c => c.Industry).ThenInclude(c => c.Candidates).FirstOrDefaultAsync(m => m.Id == id);
 
             if (Company == null)
             {

@@ -24,7 +24,8 @@
             </div>
             <div class="form-group">
                 <label asp-for="Company.Location" class="control-label"></label>
-                <input asp-for="Company.Location" class="form-control" />
+                <!--I already Created my regular expression validation for the location field and I was pround of it and I didnt want to change it-->
+                <textarea asp-for="Company.Location" class="form-control"></textarea>
                 <span asp-validation-for="Company.Location" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -33,7 +34,7 @@
                 <span asp-validation-for="Company.NumberOfEmployees" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Company.IndustryId" class="control-label"></label>
+                <label asp-for="Company.IndustryId" class="control-label">Industry</label>
                 <select asp-for="Company.IndustryId" class ="form-control" asp-items="ViewBag.IndustryId"></select>
             </div>
             <div class="form-group">

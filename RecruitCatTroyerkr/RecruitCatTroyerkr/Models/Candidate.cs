@@ -59,5 +59,13 @@ namespace RecruitCatTroyerkr.Models
         //Candidate and Industry
         public Industry Industry { get; set; }
         public int IndustryId { get; set; }
+
+        public string FullName
+        {
+            get
+            {
+                return $"{FirstName} {LastName}";
+            }
+        }
     }
 }
